@@ -9,7 +9,6 @@ int specif(const char character, va_list ap)
 	int j = 0;
 
 	spec_t specifier[] = {
-		/*{'%', print_percent},*/
 		{'s', print_string},
 		{'c', print_char},
 		{'\0', NULL},
@@ -23,5 +22,7 @@ int specif(const char character, va_list ap)
 		}
 		j++;
 	}
+	_putchar('%');
+	_putchar(character);
 	return (-1);
 }
