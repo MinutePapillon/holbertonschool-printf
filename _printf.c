@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			counter = counter + specif(format[i + 1], args);
+			counter = counter + specif(format[i + 1], ap);
 			i += 2;
 		}
 
