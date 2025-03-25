@@ -24,6 +24,7 @@ int _printf(const char *format, ...)
 			{
 				_putchar('%');
 				i += 2;
+				counter++;
 				continue;
 			}
 			counter = counter + specif(format[i + 1], ap);
