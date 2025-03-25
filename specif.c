@@ -24,5 +24,5 @@ int specif(const char character, va_list ap)
 	}
 	_putchar('%');
 	_putchar(character);
-	return (1);
+	return (-1);
 }
