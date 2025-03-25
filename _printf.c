@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - function that produces output according to a format 
+ * _printf - function that produces output according to a format
  * @format: a character string
  *
  * Return: the number of characters printed
@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 
 	if (!format || (format[0] == '%' && format[1] == '\0'))
-		return(-1);
+		return (-1);
 
 	va_start(ap, format);
 
@@ -39,5 +39,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(ap);
-	return(counter);
+	return (counter);
 }
