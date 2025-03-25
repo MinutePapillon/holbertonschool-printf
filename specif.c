@@ -15,9 +15,9 @@ int specif(const char character, va_list args)
 		{'\0', NULL},
 	};
 
-	while (specifier[j].specifiers)
+	while (specifier[j].s)
 	{
-		if (specifier[j].specifiers = character)
+		if (specifier[j].s = character)
 		{
 			return (specifier[j].function(args));
 		}
