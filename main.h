@@ -14,5 +14,6 @@ int _putchar(char c);
 int print_percent();
 int print_string(va_list ap);
 int print_char(va_list ap);
+int specif(const char character, va_list args);
 
 #endif
