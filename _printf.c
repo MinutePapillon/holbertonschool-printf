@@ -8,12 +8,11 @@
  */
 int _printf(const char *format, ...)
 {
+	int i = 0, counter = 0;
+	va_list ap;
 
 	if (format == NULL)
 		return(-1);
-	
-	va_list ap;
-	int i = 0, counter = 0;
 
 	va_start(ap, format);
 

@@ -4,12 +4,12 @@
  *
  *
  */
-int specif(const char character, va_list args)
+int specif(const char character, va_list ap)
 {
 	int j = 0;
 
 	spec_t specifier[] = {
-		{'%', print_percent},
+		/*{'%', print_percent},*/
 		{'s', print_string},
 		{'c', print_char},
 		{'\0', NULL},
@@ -17,9 +17,9 @@ int specif(const char character, va_list args)
 
 	while (specifier[j].s)
 	{
-		if (specifier[j].s = character)
+		if (specifier[j].s == character)
 		{
-			return (specifier[j].function(args));
+			return (specifier[j].f(ap));
 		}
 		j++;
 	}

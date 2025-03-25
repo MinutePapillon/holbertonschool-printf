@@ -4,11 +4,11 @@
  * print_percent - prints an %
  * @ap: the list of ap
  */
-int print_percent(void)
+/*int print_percent(va_list ap)
 {
 	_putchar('%');
 	return(1);
-}
+}*/
 /**
  * print_char - prints a char
  * @ap: the list of ap
