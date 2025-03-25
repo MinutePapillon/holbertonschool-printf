@@ -20,6 +20,12 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
+			if (format[i + 1] == '%')
+			{
+				_putchar('%');
+				i += 2;
+				continue;
+			}
 			counter = counter + specif(format[i + 1], ap);
 			i += 2;
 		}
