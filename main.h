@@ -6,7 +6,7 @@
 typedef struct spec
 {
 	char s;
-	void (*f)(va_list);
+	int (*f)(va_list);
 }spec_t;
 
 int _printf(const char *format, ...);

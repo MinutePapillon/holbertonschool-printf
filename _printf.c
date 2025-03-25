@@ -8,12 +8,11 @@
  */
 int _printf(const char *format, ...)
 {
-
-	if (format == NULL)
-		return(-1);
-	
-	va_list ap;
 	int i = 0, counter = 0;
+	va_list ap;
+
+	if (!format || (format[0] == '%' && format[1] == '\0'))
+		return(-1);
 
 	va_start(ap, format);
 
@@ -21,6 +20,13 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
+			if (format[i + 1] == '%')
+			{
+				_putchar('%');
+				i += 2;
+				counter++;
+				continue;
+			}
 			counter = counter + specif(format[i + 1], ap);
 			i += 2;
 		}
