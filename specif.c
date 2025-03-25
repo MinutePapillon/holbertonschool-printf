@@ -3,7 +3,7 @@
  * specif - function that verify if the character is a specifier
  * @character: character in the string
  * @ap: va_list
- * 
+ *
  * Return: the number of character printed
  */
 int specif(const char character, va_list ap)
