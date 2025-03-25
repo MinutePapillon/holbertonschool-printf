@@ -4,7 +4,7 @@
 
 typedef struct spec
 {
-	char *s;
+	char s;
 	void (*f)(va_list);
 }spec_t;
 
