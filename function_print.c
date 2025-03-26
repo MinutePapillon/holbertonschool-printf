@@ -3,6 +3,8 @@
 /**
  * print_char - prints a char
  * @ap: the list of ap
+ *
+ * Return: number of character printed
  */
 int print_char(va_list ap)
 {
@@ -14,6 +16,8 @@ int print_char(va_list ap)
 /**
  * print_string - prints a string
  * @ap: the list of ap
+ *
+ * Return: number of character printed
  */
 int print_string(va_list ap)
 {
