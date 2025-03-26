@@ -13,6 +13,8 @@ int specif(const char character, va_list ap)
 	spec_t specifier[] = {
 		{'s', print_string},
 		{'c', print_char},
+		{'i', print_int},
+		{'d', print_int},
 		{'\0', NULL},
 	};
 
