@@ -37,7 +37,7 @@ int print_int(va_list ap)
 		t++;
 	}
 
-	while (j > 10)
+	while (j > 9)
 	{
 		j /= 10;
 		counter1++;
