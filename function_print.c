@@ -8,9 +8,9 @@
  */
 int print_int(va_list ap)
 {
-	int i = va_arg(ap, int), k = 0, l = 0, t = 0;
+	int i = va_arg(ap, int), t = 0;
 	int j = i;
-	int counter = 0;
+	int counter1 = 0, counter2 = 0;
 
 	if (i < 0)
 	{
@@ -21,18 +21,18 @@ int print_int(va_list ap)
 	while (j > 10)
 	{
 		j /= 10;
-		counter++;
+		counter1++;
 	}
+	counter2 = counter1;
 
-	while (counter > 0)
+	while (counter2 > 0)
 	{
-		k = i / (10 * counter);
-		_putchar(k + '0');
-		counter--;
+		_putchar((i / (10 * counter2)) + '0');
+		counter2--;
+		counter1++;
 	}
-	l = i % 10;
-	_putchar(l + '0');
-	return (counter + 1 + t);
+	_putchar((i % 10) + '0');
+	return (counter1 + 1 + t);
 }
 /**
  * print_char - prints a char
