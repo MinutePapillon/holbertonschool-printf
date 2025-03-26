@@ -9,12 +9,12 @@
  */
 int puissance(int y)
 {
-	int counter = 1, result = 1;
+	int result = 1;
 
-	while (counter <= y)
+	while (y > 0)
 	{
 	result = result * 10;
-	counter++;
+	y--;
 	}
 
 	return (result);
@@ -28,31 +28,33 @@ int puissance(int y)
 int print_int(va_list ap)
 {
 	int i = va_arg(ap, int), t = 0;
-	int j = i, k = i;
-	int counter1 = 0, counter2 = 0;
+	int counter1 = 0;
+	int divisor, digit;
 
 	if (i < 0)
 	{
 		_putchar('-');
+		i = -i;
 		t++;
 	}
 
-	while (j > 9)
-	{
-		j /= 10;
-		counter1++;
-	}
-	counter2 = counter1;
+	divisor = puissance(counter);
 
-	while (counter2 > 0)
+	while (divisor <= i / 10)
 	{
-		_putchar((i / puissance(counter2)) + '0');
-		i %= puissance(counter2);
-		counter2--;
-		counter1++;
+		divisor *= 10;
+		counter++;
 	}
-	_putchar((k % 10) + '0');
-	return (counter1 + 1 + t);
+
+	while (divisor > 0)
+	{
+		digit = i / divisor;
+		_putchar(digit + '0');
+		i %= divisor;
+		divisor /= 10;
+		t++;
+	}
+	return (t);
 }
 /**
  * print_char - prints a char
