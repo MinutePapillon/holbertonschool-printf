@@ -1,5 +1,24 @@
 #include <stdarg.h>
 #include "main.h"
+
+/**
+ * puissance - return puissance 10
+ * @y: exposant
+ *
+ * Return: return result
+ */
+int puissance(int y)
+{
+	int counter = 1, result = 1;
+
+	while (counter <= y)
+	{
+	result = result * 10;
+	counter++;
+	}
+
+	return (result);
+}
 /**
  * print_int - print a int
  * @ap: the list of ap
@@ -9,7 +28,7 @@
 int print_int(va_list ap)
 {
 	int i = va_arg(ap, int), t = 0;
-	int j = i;
+	int j = i, k = i;
 	int counter1 = 0, counter2 = 0;
 
 	if (i < 0)
@@ -27,11 +46,12 @@ int print_int(va_list ap)
 
 	while (counter2 > 0)
 	{
-		_putchar((i / (10 * counter2)) + '0');
+		_putchar((i / puissance(counter2)) + '0');
+		i %= puissance(counter2);
 		counter2--;
 		counter1++;
 	}
-	_putchar((i % 10) + '0');
+	_putchar((k % 10) + '0');
 	return (counter1 + 1 + t);
 }
 /**
