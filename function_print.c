@@ -28,7 +28,7 @@ int puissance(int y)
 int print_int(va_list ap)
 {
 	int i = va_arg(ap, int), t = 0;
-	int counter1 = 0;
+	int counter = 0;
 	int divisor, digit;
 
 	if (i < 0)
