@@ -9,7 +9,9 @@
 `%i`
 ## Compilation and how to use :
 * U need to compile the code like the following :
+```
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```
 * And then u just need to do ./a.out wich is the output
 * If u need a special test or something different than the main.c testing file u can go and modify, it it will not affect the code.
 ![image](https://github.com/user-attachments/assets/0dae95d6-87af-4084-abb3-6cb41d0427df)
