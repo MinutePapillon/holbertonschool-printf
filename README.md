@@ -15,7 +15,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ![image](https://github.com/user-attachments/assets/0dae95d6-87af-4084-abb3-6cb41d0427df)
 ## Requirements :
 * U need to have unbuntu installed and copy the following repo
-* https://holberton-school-org.slack.com/archives/D08K4L7UYJZ/p1742896779461199
+* https://github.com/MinutePapillon/holbertonschool-printf.git
 * If u need help on the code with more information u can always do **man man_3_printf**
 ## Exemples :
 * Now that u have evrything set up lets try something out
