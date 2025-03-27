@@ -2,11 +2,11 @@
 # Project Holberton School Printf
 * The goal of this project is to do our own printf function
 * This function only handles 5 specifier:
-`*%c`
-`*%s`
-`*%i`
-`*%d`
-`*%%`
+`%s`
+`%c`
+`%%`
+`%d`
+`%i`
 ## Compilation and how to use :
 * U need to compile the code like the following :
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
