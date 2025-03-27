@@ -7,3 +7,9 @@
 `*%i`
 `*%d`
 `*%%`
+# Compilation and how to use :
+* U need to compile the code like the following :
+![image](https://github.com/user-attachments/assets/d711533a-66bd-4c60-97b3-995c09222c19)
+* And then u just need to do ./a.out wich is the output
+* If u need a special test or something different than the main.c testing file u can go and modify, it it will not affect the code.
+# Requirements :
