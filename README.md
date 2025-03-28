@@ -1,5 +1,6 @@
 ![image](https://github.com/user-attachments/assets/9ba65ca9-b0da-46da-bd3f-5c3446d1326e)
 # Project Holberton School Printf
+printf is a C standard library function that formats text and writes it to standard output. An example of the printf function. The name, printf is short for print formatted where print refers to output to a printer although the functions are not limited to printer output.
 * The goal of this project is to do our own printf function
 * This function only handles 5 specifier:
 `%s`
@@ -72,4 +73,5 @@ Let's try to printf a simple sentence.
 * During this projet we had to work in teams wich some were 3 and others 2 so we had to learn and organize evrything wich was quite hard
 * This projet was long and tidious but we managed to do it thanks to my tm8
 * Thank you for you're attention and reading all this (don't forget to see the flowchart)
+![image](https://github.com/user-attachments/assets/f6ae6704-3696-432d-b5bd-865098303a19)
 
