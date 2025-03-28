@@ -14,6 +14,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 * And then u just need to do ./a.out wich is the output
 * If u need a special test or something different than the main.c testing file u can go and modify, it it will not affect the code.
+* If u need it copy the main.c we have under this message.
 ```
 int main(void)
 {
@@ -51,7 +52,6 @@ int main(void)
     return (0);
 }
 ```
-![image](https://github.com/user-attachments/assets/0dae95d6-87af-4084-abb3-6cb41d0427df)
 ## Requirements :
 * U need to have unbuntu installed and copy the following repo
 * https://github.com/MinutePapillon/holbertonschool-printf.git
@@ -72,4 +72,4 @@ Let's try to printf a simple sentence.
 * During this projet we had to work in teams wich some were 3 and others 2 so we had to learn and organize evrything wich was quite hard
 * This projet was long and tidious but we managed to do it thanks to my tm8
 * Thank you for you're attention and reading all this (don't forget to see the flowchart)
-![image](https://github.com/user-attachments/assets/4fe68ec8-581b-48d2-b3ec-77571f7f2724)
+
