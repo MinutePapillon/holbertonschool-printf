@@ -73,5 +73,6 @@ Let's try to printf a simple sentence.
 * During this projet we had to work in teams wich some were 3 and others 2 so we had to learn and organize evrything wich was quite hard
 * This projet was long and tidious but we managed to do it thanks to my tm8
 * Thank you for you're attention and reading all this (don't forget to see the flowchart)
-![image](https://github.com/user-attachments/assets/f6ae6704-3696-432d-b5bd-865098303a19)
+![flowcharts_printf](https://github.com/user-attachments/assets/13426b30-98f4-4a8e-ae35-1bff5f5a4c74)
+
 
